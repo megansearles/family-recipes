@@ -1,0 +1,16 @@
+.recipe-container {
+  padding: 1rem;
+  background-color: aliceblue;
+}
+.recipe-title, .recipe-subtitle {
+  text-align: left;
+  color: cornflowerblue;
+  border-bottom: 1px solid;
+}
+.recipe-ingredients-list {
+  text-align: left;
+  columns: 2;
+}
+.recipe-instructions {
+  text-align: left;
+}

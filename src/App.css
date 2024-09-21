@@ -1,0 +1,22 @@
+.app-container {
+  display: block;
+}
+
+.app-header {
+  display: flex;
+  text-align: left;
+  top: 0;
+  border-bottom: 2px solid steelblue;
+  align-items: baseline;
+  padding: 0.25rem;
+  background-color: lightsteelblue;
+}
+.app-header-main {
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.app-header-supplement {
+  font-size: 14px;
+  padding: 0.5rem;
+}
