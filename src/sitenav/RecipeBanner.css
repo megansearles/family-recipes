@@ -1,0 +1,36 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  top: 0;
+  border-bottom: 2px solid steelblue;
+  align-items: baseline;
+  padding: 0.25rem;
+  background-color: lightsteelblue;
+}
+
+.app-header-main {
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.app-header-supplement {
+  font-size: 14px;
+  padding: 0.5rem;
+}
+
+.right-header {
+  padding-right: 0.5rem;
+}
+
+.hamburger-menu {
+  fill: steelblue;
+}
+
+.hamburger-bars {
+  fill: currentColor;
+}
+
+.menu-dropdown {
+  border: steelblue 2px solid;
+}
