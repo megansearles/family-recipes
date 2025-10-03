@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import './RecipeBanner.css';
 
-export default function RecipeBanner() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function RecipeBanner({sideMenuOpen, setSideMenuOpen}) {
   return (
     <div className="app-header">
       <div className="left-header">
@@ -13,7 +11,7 @@ export default function RecipeBanner() {
       <div className="right-header">
         <button
           className="hamburger-menu"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setSideMenuOpen(!sideMenuOpen)}
           aria-label="Open menu"
         >
           <svg className="hamburger-bars" width="24" height="24" viewBox="0 0 24 24">
@@ -22,12 +20,6 @@ export default function RecipeBanner() {
             <rect y="18" width="24" height="2" rx="1" />
           </svg>
         </button>
-        {menuOpen && (
-        <div className="menu-dropdown">
-          <a href="#recipes">Recipes</a>
-          <a href="#about">About</a>
-        </div>
-      )}
       </div>
     </div>
   );
