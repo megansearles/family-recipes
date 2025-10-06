@@ -1,3 +1,7 @@
 .app-container {
   display: block;
 }
+
+.main-content {
+  z-index: 1;
+}

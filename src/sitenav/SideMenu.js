@@ -1,15 +1,19 @@
 import './SideMenu.css';
 
-export default function SideMenu({sideMenuOpen}) {
-  var visibility = sideMenuOpen ? "visible" : "hidden";
+export default function SideMenu({sideMenuOpen, setSideMenuOpen}) {
   return (
-    <div className="yoyo">
-      <div>menu {visibility}</div>
-      {/* <div className="side-menu">
-        <h2><a href="#recipes">Recipes</a></h2>
-        <h2><a href="#tags">Tags</a></h2>
-        <h2><a href="#new-recipe">Add New Recipe</a></h2>
-      </div> */}
+    <div className= {`side-menu ${sideMenuOpen ? "open" : ""}`}>
+      <button
+          className="close-menu-btn"
+          onClick={() => setSideMenuOpen(!sideMenuOpen)}
+          aria-label="Close menu"
+        > X
+        </button>
+      <h3><a href="#home">Home</a></h3>
+      <h3><a href="#new-recipe">New Recipe</a></h3>
+      <h3><a href="#all-recipes">All Recipes</a></h3>
+      <h3><a href="#categories">Categories</a></h3>
+      <h3><a href="#Family Groups">Family Groups</a></h3>
     </div>
   );
 }

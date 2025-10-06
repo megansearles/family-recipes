@@ -9,9 +9,11 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <RecipeBanner sideMenuOpen={sideMenuOpen} setSideMenuOpen={setSideMenuOpen}/>
-      <SideMenu sideMenuOpen={sideMenuOpen}/>
-      <Recipe />
+      <div className="main-content">
+        <RecipeBanner sideMenuOpen={sideMenuOpen} setSideMenuOpen={setSideMenuOpen}/>
+        <Recipe />
+      </div>
+      <SideMenu sideMenuOpen={sideMenuOpen} setSideMenuOpen={setSideMenuOpen}/>
     </div>
   );
 }
